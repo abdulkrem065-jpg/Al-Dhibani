@@ -49,8 +49,8 @@
         }
         function sendOrder() {
             if(cart.length == 0) return alert("السلة فارغة");
-            let phone = "967XXXXXXXXX"; // ضع رقمك هنا بالصيغة الدولية
-            let msg = encodeURIComponent("طلب جديد من متجر الضحباني:\n" + cart.join("\n") + "\n\nالإجمالي: " + total + "$");
+            let phone = "967770493341"; // ضع رقمك هنا بالصيغة الدولية
+            let msg = encodeURIComponent("طلب جديد من متجرالذيباني:\n" + cart.join("\n") + "\n\nالإجمالي: " + total + "$");
             window.open("https://wa.me/" + phone + "?text=" + msg);
         }
     </script>
