@@ -3,35 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجر الذيباني</title>
+    <title>ظ…طھط¬ط± ط§ظ„ط°ظٹط¨ط§ظ†ظٹ - Al-Dhibani Store</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Tajawal', sans-serif; background-color: #f0f4f8; }
-        .product-card { transition: transform 0.3s; }
-        .product-card:hover { transform: translateY(-5px); }
+        body { font-family: 'Tajawal', sans-serif; background-color: #f3f7fa; }
+        .product-card { transition: all 0.3s ease; }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .logo-img { filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); }
     </style>
 </head>
 <body>
-    <nav class="bg-blue-800 text-white p-4 shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">متجر الذيباني</h1>
-            <span class="bg-yellow-500 text-blue-900 px-3 py-1 rounded-full text-sm font-bold">صنعاء - شارع النصر</span>
+
+    <nav class="bg-white text-blue-900 shadow-md sticky top-0 z-50 border-b-4 border-blue-800">
+        <div class="container mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center gap-4">
+            
+            <div class="flex items-center gap-4">
+                <img src="logo.png" alt="ط´ط¹ط§ط± ط§ظ„ط°ظٹط¨ط§ظ†ظٹ" class="logo-img w-16 h-16 object-contain rounded-lg shadow-sm border border-gray-100">
+                <div>
+                    <h1 class="text-2xl font-bold text-blue-900 leading-tight">ظ…طھط¬ط± ط§ظ„ط°ظٹط¨ط§ظ†ظٹ</h1>
+                    <p class="text-xs text-blue-600 font-bold">ظ…ظˆط§ط¯ ط؛ط°ط§ط¦ظٹط© | ط¥ظ„ظƒطھط±ظˆظ†ظٹط§طھ | ط®ط¯ظ…ط§طھ ط±ظ‚ظ…ظٹط©</p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center items-center gap-3">
+                <div class="bg-gray-100 px-4 py-2 rounded-full flex items-center gap-2 shadow-sm">
+                    <span class="text-blue-800 font-bold text-sm">ًں“چ طµظ†ط¹ط§ط، - ط´ط§ط±ط¹ ط§ظ„ظ†طµط±</span>
+                </div>
+                <a href="tel:770493341" class="bg-blue-800 text-white px-4 py-2 rounded-lg font-bold flex items-center gap-2 hover:bg-blue-700 transition shadow-md">
+                    <span>ًں“‍ 770493341</span>
+                </a>
+                <a href="https://wa.me/967770493341" target="_blank" class="bg-green-600 text-white px-4 py-2 rounded-lg font-bold flex items-center gap-2 hover:bg-green-700 transition shadow-md">
+                    <span>ظˆط§طھط³ط§ط¨</span>
+                </a>
+            </div>
         </div>
     </nav>
 
-    <div class="container mx-auto p-6">
-        <h2 class="text-xl font-bold mb-6 text-blue-800 border-r-4 border-yellow-500 pr-3">أحدث المنتجات</h2>
-        
-        <div id="products-container" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <p class="text-center col-span-full text-gray-500">جاري تحميل المنتجات من المخزن...</p>
+    <main class="container mx-auto p-6">
+        <div class="flex items-center justify-between mb-8 border-r-8 border-blue-800 pr-4">
+            <div>
+                <h2 class="text-2xl font-bold text-gray-800">ظ‚ط§ط¦ظ…ط© ط§ظ„ظ…ط¹ط±ظˆط¶ط§طھ</h2>
+                <p class="text-gray-500 text-sm">طھطµظپط­ ط£ط­ط¯ط« ط§ظ„ظ…ظ†طھط¬ط§طھ ط§ظ„ظ…طھظˆظپط±ط© ظ„ط¯ظٹظ†ط§</p>
+            </div>
         </div>
-    </div>
+        
+        <div id="products-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="col-span-full py-20 text-center">
+                <div class="inline-block animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-blue-800 mb-4"></div>
+                <p class="text-gray-600 font-bold italic">ط¬ط§ط±ظٹ طھط­ط¯ظٹط« ظ‚ط§ط¦ظ…ط© ط§ظ„ظ…ظ†طھط¬ط§طھ ظ…ظ† ط§ظ„ظ…ط®ط²ظ†...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-blue-900 text-white mt-12 py-8">
+        <div class="container mx-auto text-center">
+            <p class="font-bold">آ© 2026 ظ…طھط¬ط± ط§ظ„ط°ظ‡ط¨ط§ظ†ظٹ - Al-Dhibani Store</p>
+            <p class="text-blue-300 text-sm mt-2 font-bold">ط¨ط¥ط¯ط§ط±ط©: ط¹ط¨ط¯ط§ظ„ظƒط±ظٹظ… ط§ظ„ط°ظٹط¨ط§ظ†ظٹ</p>
+        </div>
+    </footer>
 
     <script>
-        // معرف الجدول الخاص بك
+        // ط¥ط¹ط¯ط§ط¯ط§طھ ط§ظ„ط±ط¨ط·
         const sheetId = '11hPa_HfFI6rdbbohRd1rrc1IgEerXd3f64oFCEN0OX0';
         const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json`;
+        const myPhone = "967770493341"; 
 
         async function loadProducts() {
             try {
@@ -44,33 +80,44 @@
                 container.innerHTML = '';
 
                 rows.forEach((row, index) => {
-                    // نتخطى السطر الأول إذا كان يحتوي على العناوين
+                    // طھط®ط·ظٹ ط§ظ„طµظپ ط§ظ„ط£ظˆظ„ (ط§ظ„ط¹ظ†ط§ظˆظٹظ†)
                     if (index === 0) return; 
 
-                    const name = row.c[0] ? row.c[0].v : 'بدون اسم';
+                    const name = row.c[0] ? row.c[0].v : 'ظ…ظ†طھط¬ ظ…طھظˆظپط±';
                     const desc = row.c[1] ? row.c[1].v : '';
-                    const price = row.c[2] ? row.c[2].v : 'اتصل للسعر';
-                    const img = row.c[3] ? row.c[3].v : 'https://via.placeholder.com/300x200?text=Al-Dhibani';
-                    const category = row.c[4] ? row.c[4].v : 'عام';
+                    const price = row.c[2] ? row.c[2].v : 'طھظˆط§طµظ„ ظ„ظ„ط³ط¹ط±';
+                    const img = row.c[3] ? row.c[3].v : 'https://via.placeholder.com/400x300?text=Al-Dhibani+Store';
+                    const category = row.c[4] ? row.c[4].v : 'ط¹ط§ظ…';
 
                     container.innerHTML += `
-                        <div class="product-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
-                            <img src="${img}" class="w-full h-48 object-cover" alt="${name}">
-                            <div class="p-4">
-                                <span class="text-xs text-blue-600 font-bold uppercase">${category}</span>
-                                <h3 class="text-lg font-bold mt-1 text-gray-800">${name}</h3>
-                                <p class="text-gray-600 text-sm mt-1 h-10 overflow-hidden">${desc}</p>
-                                <div class="flex justify-between items-center mt-4">
-                                    <span class="text-blue-700 font-bold text-xl">${price}</span>
-                                    <button class="bg-yellow-500 hover:bg-yellow-600 text-blue-900 px-4 py-2 rounded-lg text-sm font-bold transition">طلب الآن</button>
+                        <div class="product-card bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100 flex flex-col h-full ring-1 ring-black ring-opacity-5">
+                            <div class="relative">
+                                <img src="${img}" class="w-full h-56 object-cover" alt="${name}" onerror="this.src='https://via.placeholder.com/400x300?text=Al-Dhibani+Store'">
+                                <span class="absolute top-3 right-3 bg-blue-800 text-white text-[10px] px-3 py-1 rounded-full font-bold shadow-lg">${category}</span>
+                            </div>
+                            <div class="p-5 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">${name}</h3>
+                                <p class="text-gray-600 text-sm mb-6 flex-grow leading-relaxed">${desc}</p>
+                                <div class="mt-auto">
+                                    <div class="flex justify-between items-center mb-4 border-t pt-4">
+                                        <span class="text-blue-800 font-extrabold text-2xl">${price}</span>
+                                    </div>
+                                    <a href="https://wa.me/${myPhone}?text=ظ…ط±ط­ط¨ط§ظ‹ ظ…طھط¬ط± ط§ظ„ط°ظٹط¨ط§ظ†ظٹطŒ ط£ط±ظٹط¯ ط·ظ„ط¨: ${name}" 
+                                       target="_blank" 
+                                       class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-xl text-center font-bold transition-all flex items-center justify-center gap-2 shadow-lg active:scale-95">
+                                       <span class="text-lg">ط§ط·ظ„ط¨ ط¹ط¨ط± ظˆط§طھط³ط§ط¨</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     `;
                 });
             } catch (error) {
-                console.error('خطأ في تحميل البيانات:', error);
-                document.getElementById('products-container').innerHTML = '<p class="text-red-500 text-center col-span-full">حدث خطأ أثناء تحميل المنتجات. تأكد من إعدادات المشاركة في الجدول.</p>';
+                console.error('ط®ط·ط£:', error);
+                document.getElementById('products-container').innerHTML = `
+                    <div class="col-span-full bg-red-50 text-red-600 p-6 rounded-xl text-center font-bold">
+                        ط­ط¯ط« ط®ط·ط£ ظپظٹ طھط­ط¯ظٹط« ط§ظ„ط¨ظٹط§ظ†ط§طھ. ظٹط±ط¬ظ‰ ط§ظ„طھط£ظƒط¯ ظ…ظ† "ظ†ط´ط±" ط¬ط¯ظˆظ„ ط§ظ„ط¨ظٹط§ظ†ط§طھ ظ„ظ„ط¬ظ…ظٹط¹.
+                    </div>`;
             }
         }
 
